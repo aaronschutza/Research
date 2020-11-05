@@ -1,0 +1,9 @@
+set terminal epslatex size 12cm, 8cm
+set output 'curve3.tex'
+set title 'Expectation Value of Block Time'
+set xlabel '$c$'
+set ylabel '$\langle t \rangle$'
+set key off
+set logscale x
+set format x "$10^{%T}$"
+plot 'n_delta_t.out' with lines

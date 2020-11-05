@@ -1,0 +1,8 @@
+set terminal epslatex size 12cm, 8cm
+set output 'curve1.tex'
+set title 'Predicted Slot Interval Distribution for $c=10^{-2}$'
+set xlabel '$\delta$'
+set ylabel '$\langle n(\delta) \rangle$'
+set key off
+set xrange [0:40]
+plot 'n_delta_analytic_0.01.out' with lines

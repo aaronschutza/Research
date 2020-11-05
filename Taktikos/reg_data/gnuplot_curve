@@ -1,0 +1,12 @@
+set terminal epslatex size 12cm, 12cm
+set output 'reg1.tex'
+set title 'Forging Power Regression'
+set xlabel '$r$'
+set ylabel '$F(r)$'
+set key left top
+f(x) = x
+plot 'data_set.out' with points pointtype 5 title 'Simulation', \
+    f(x) with lines title 'Static $f$', \
+    'Fr_0.01.out' with lines title '$f_B = 0.01$', \
+    'Fr_0.05.out' with lines title '$f_B = 0.05$', \
+    'Fr_0.1.out' with lines title '$f_B = 0.1$' 

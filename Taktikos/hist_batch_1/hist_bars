@@ -1,0 +1,8 @@
+set terminal epslatex size 16cm, 8cm
+set output 'hist1.tex'
+set title 'LDD Slot Interval Distribution'
+set xlabel '$\delta$'
+set ylabel '$\langle n(\delta) \rangle$'
+set xrange [0:60]
+set key off
+plot 'data_set.out' with errorbars
