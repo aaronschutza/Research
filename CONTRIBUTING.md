@@ -75,5 +75,3 @@ If the simulation "explodes" (turns black/NaNs), please include:
 
 This project is MIT Licensed.
 However, because this is derived from the **Wolf-Toffoletto-Schutza** framework, please maintain the reference to the original **Rice Convection Model** lineage in the headers.
-
-Go get some rest. You won the day.
